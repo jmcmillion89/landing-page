@@ -8,36 +8,6 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  display: flex;
-}
-
-.hero-text h1{
-  font-size: 48px;
-  color: #f9faf8;
-  font-weight: 900;
-}
-
-.hero-text p, nav ul li {
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 1rem;
-}
-
-.header-logo {
-  font-size: 24px;
-  color: #f9faf8;
-  margin-right: auto;
-}
-
 header,
 .hero,
 footer {
@@ -47,6 +17,13 @@ footer {
 button,
 .cta {
   background-color: #388ff6;
+  color: white;
+}
+
+button {
+  border: 2px solid #388ff6;
+  padding: 5px 25px;
+  border-radius: 5px;
 }
 
 .info-header, .quote {
@@ -60,4 +37,141 @@ button,
 
 .quote {
   font-weight: 300;
+}
+
+/* Header section */
+
+.hero-text h1{
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.hero-text p, nav ul li {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+  margin-right: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+header {
+  display: flex;
+  padding: 1rem 20rem;
+}
+
+/* Hero section */
+
+.hero {
+  display: flex;
+  padding: 5rem 20rem 10rem 20rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  background-color: gray;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+/* Information section */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 37rem;
+  gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-image {
+  min-width: 50px;
+  min-height: 100px;
+  border: 2px solid #388ff6;
+  border-radius: 10px;
+}
+
+/* Quote section */
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 30rem;
+  background-color: lightgray;
+}
+
+.quote-text {
+  font-style: italic;
+  font-weight: 200;
+}
+.quote-author {
+  text-align: end;
+  font-weight: 900;
+  font-size: 1rem;
+  padding-right: 2rem;
+}
+
+/* Call To Action section */
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 25rem;
+  padding: 2rem 5rem;
+}
+
+.cta-header {
+  font-weight: bold;
+}
+
+.cta-text {
+  flex: 2;
+}
+
+.cta-button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.cta-button button{
+  border: 1px solid white;
+}
+
+/* Footer section */
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: white;
 }
